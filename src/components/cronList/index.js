@@ -8,7 +8,7 @@ export default {
             checkBox:'',
             raDios:'',
             title11:'输入框',
-            smtitle:'Input',
+            smtitle:'Form Input',
             cssinclude:'该表单控件基于:bootstrap.min.css 、 font-awesome.min.css',
             jsinclude:'该表单控件基于:jquery.min.js 、 bootstrap.min.js'
             
@@ -19,7 +19,6 @@ export default {
     },
     mounted(){
         this.html = HTMLFormat($('.form1').html());
-        
     }
     
 }

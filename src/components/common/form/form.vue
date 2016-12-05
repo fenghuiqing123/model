@@ -73,11 +73,3 @@
 </form>
 </div>
 </template>
-export default {
-  name:'form1',
-  data(){
-    return {
-
-    }
-  }
-}

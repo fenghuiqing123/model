@@ -21,8 +21,9 @@
     position: relative;
 }
 .form-input>.tools{
-    width:120px;
+    width:105px;
     height:25px;
+    line-height: 25px;
     position: absolute;
     left:46%;
     bottom:-25px;

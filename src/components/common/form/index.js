@@ -17,7 +17,7 @@ export default {
         $(".tools").unbind("click").on("click",function(){
             $(this).parent(".form-input").find(".portlet-body.code").toggle();
             if($(this).parent(".form-input").find(".portlet-body.code").css("display")=="block"){
-                $(this).find("a").removeClass("expand").addClass("collapse").css({"background-position":"left"}).html("点击隐藏代码！");
+                $(this).find("a").removeClass("expand").addClass("collapse").css({"background-position":"left"}).html("点击隐藏代码");
                 $(this).parent(".form-input").find(".portlet.box>.portlet-title").css({
                     display:'block'
                 });

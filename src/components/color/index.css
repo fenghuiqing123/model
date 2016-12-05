@@ -1,0 +1,34 @@
+.marginB{
+    margin-bottom: 36px;
+}
+.bg-pink{
+    background:#f95759;
+}
+.bg-p-dark{
+    background:#333;
+}
+.bg-p-gray{
+    background: #757575;
+}
+.bg-p-sgray{
+    background: #999;
+}
+.bg-p-cgray{
+    background: #dcdcdc;
+}
+.bg-p-dpink{
+    background: #ff4362;
+}
+.bg-p-dyellow{
+    background: #ffa746;
+}
+.bg-p-dblue{
+    background:#02b792;
+}
+.bg-p-dgreen{
+    background:#0087cc;
+}
+.bg-p-cgreen {
+    background:#6f8197;
+}
+
