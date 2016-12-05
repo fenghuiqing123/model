@@ -1,0 +1,40 @@
+<div class="form-input">
+<!-- BEGIN FORM-->
+<slot name="showstyle"></slot>
+<!-- END FORM-->
+<!--  代码区块开始-->
+   
+<div class="portlet box box-news" :class="colorstyle">
+    <div class="portlet-title code-button">
+        <div class="caption">
+            <i class="fa fa-gift"></i>
+            <span>{{labhtml}}</span>
+        </div>
+        <div class="caption">
+            <span>{{labcss}}</span>
+        </div>
+        <div class="caption">
+            <span>{{labusage}}</span>
+        </div>
+<!--
+        <div class="tools">
+            <a href="javascript:;" class="expand"> </a>
+        </div>
+-->
+    </div>
+    
+<!--代码区-->
+   
+    <div class="portlet-body code">
+<!--        <textarea  class="activeText">{{html}}</textarea>-->
+        <slot name="innhtml"></slot>
+        <slot name="innercss"></slot>
+        <slot name="innerusage"></slot>     
+    </div>
+
+</div>
+<!-- 代码区块结束-->
+    <div class="tools">
+        <a href="javascript:;" class="expand"></a>
+    </div>
+</div>

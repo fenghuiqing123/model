@@ -1,0 +1,47 @@
+颜色：
+
+类名： green    
+
+	background：#32c5d2
+
+        border：#5cd1db
+
+
+类名： blue-hoki   
+
+	background：#67809F
+
+        border：#869ab3 
+
+
+类名： yellow   
+
+	background：#c49f47
+
+        border：#d0b36e
+
+类名： red
+
+	background：#e7505a
+
+        border：#ed7d84
+
+类名： blue
+
+	background：#3598dc
+
+        border：#3598dc
+
+类名： default
+
+	background：#e1e5ec
+
+        border：#e1e5ec
+
+
+
+类名： purple
+
+	background：#8E44A
+
+        border：#a563c1
