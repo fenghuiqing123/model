@@ -1,25 +1,20 @@
 import InputModel from 'components/common/form/inputModel'
-import form1 from 'components/common/form/form'
-import readOnly from 'components/common/form/readonly'
-import checkBox from 'components/common/form/checkBox'
-import raDios from 'components/common/form/raDios'
+import summary1 from 'components/common/form/summary1'
 export default {
     data(){
         return {
             html:'',
-            readOnly:'',
-            checkBox:'',
-            raDios:''
+            title11:'表格',
+            smtitle:'Data Table',
+            cssinclude:'该表单控件基于:bootstrap.min.css 、 font-awesome.min.css',
+            jsinclude:'该表单控件基于:jquery.min.js 、 bootstrap.min.js'
         }
     },
     components: {
-        InputModel,form1,readOnly,checkBox,raDios
+        InputModel,summary1
     },
     mounted(){
-        this.html = HTMLFormat($('.form1').html());
-        this.readOnly = HTMLFormat($('.readOnly').html());
-        this.checkBox = HTMLFormat($('.checkBox').html());
-        this.raDios = HTMLFormat($('.raDios').html());
+//        this.readOnly = HTMLFormat($('.readOnly').html());
     }
     
 }

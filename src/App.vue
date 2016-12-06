@@ -37,6 +37,11 @@ export default {
   body{
         font-size: 14px;
     }
+  button{
+        margin:0;
+        padding: 0;
+        outline: none;
+  }
   .view-wrap{
     margin-left: 245px;
     padding-top: 70px;
@@ -44,9 +49,11 @@ export default {
   .page-content-wrapper .page-content{
         padding: 25px 10px 10px 60px;
   }
-  .tab-content{
-    margin-top:50px;
-  }
+  .alert-success{
+        background-color: #FFC4C4;
+        border-color: #FFC4C4;
+        color:#F95759;
+    }
   @media screen and (max-width:991px){
     .view-wrap{
         margin-left:0px;

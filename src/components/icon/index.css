@@ -1,0 +1,11 @@
+.tabbable-line{
+    margin-top:36px;
+}
+.tab-content{
+    margin-top:30px;
+}
+.glyphicons-demo ul.alert-success li{
+    width:100%;
+    height:auto;
+    border:none;
+}
