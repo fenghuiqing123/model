@@ -1,344 +1,131 @@
 <div>
-	<h1 class="page-title"> Form Layouts
-		<small>form layouts</small>
-	</h1>
-	<div class="row">
-		<div class="con-md-12">
-			<div class="m-heading-1 border-green m-bordered">
-                <div  class="caption news-fonts">
-                    <i  class="icon-settings font-red-mint"></i>
-                    <span  class="caption-subject font-red-mint bold uppercase">CSS</span>
-                </div>
-                <div class="news-marginbottom"> 
-                    该表单控件基于:bootstrap.min.css 、 font-awesome.min.css 
-                </div>
-                <div class="caption news-fonts">
-                    <i class="icon-settings font-red-mint"></i>
-                    <span class="caption-subject font-red-mint bold uppercase ">JS</span>
-                </div>
-                <div> 
-                    该表单控件基于:jquery.min.js 、 bootstrap.min.js 
-                </div>
-            </div>
-            <div class="tabbable-line boxless tabbable-reversed">
-                <ul class="nav nav-tabs">
-                    <li class="active">
-                        <a href="#tab_0" data-toggle="tab"> Form Actions </a>
-                            </li>
-                </ul>
-            </div>
-		</div>
-	</div>
+	<summary1 :title11="title11" :smtitle="smtitle" :cssinclude="cssinclude" :jsinclude="jsinclude"></summary1>
 	<div class="tab-content">
         <div class="tab-pane active" id="tab_0">
-            <input-model labhtml="HTML" labcss="CSS" labusage="USAGE" colorstyle="green">
-               <div class="portlet-body form" slot="showstyle">
-                    <form1 class="form1"></form1>     
+            <div class="row p-top p-datatime">
+                <div class="col-md-4 data-default">
+                    <data1> </data1>
                 </div>
-                <textarea readonly class="activeText" slot="innhtml">{{html}}</textarea>
-                <textarea readonly slot="innercss">
-            innercss :'a, button, code, div, img, input, label, li, p, pre, select, span, svg, table, td, textarea, th, ul{
-                border-radius: 0!important;
+                <div class="col-md-4 data-default">
+                    <data2></data2>
+                </div>
+                <div class="col-md-4 data-default">
+                    <data3> </data3>
+                </div>
+            </div> 
+            <input-model labhtml="HTML" labcss="CSS" class="p-top">
+                <textarea class="activeText" readonly slot="innhtml">{{html}}</textarea>
+                <textarea slot="innercss">
+            /*data1开始*/
+            .p-data .demonstration{
+                padding-right:22px;
             }
-            .control-label{
-                margin-top: 1px;
-                font-weight: 400;
+            .p-data .el-date-editor__editor,.p-data2 .el-date-editor__editor{
+                border-color:#dcdcdc;
             }
-            .form-control{
-                outline:0!important;
+            .p-data .el-date-editor__editor:hover{
+                border-color:#f95759;
+                background:#fff8f8;
             }
-            .btn, .form-control{
-                box-shadow:none!important;
+            .p-data .el-date-editor.is-active>.el-date-editor__editor, .el-date-editor:hover>.el-date-editor__editor, .el-date-editor__editor:focus{
+                border-color:#f95759;
+                background:#fff8f8;
             }
-            .help-block{
-                margin-top: 5px;
-                margin-bottom: 5px;
+            .p-data .el-date-editor__trigger.el-icon{
+                background:url("../../lib/global/img/data1_07.png") no-repeat center;
             }
-            [class*=" fa-"]:not(.fa-stack), [class*=" glyphicon-"], [class*=" icon-"], [class^=fa-]:not(.fa-stack), [class^=glyphicon-], [class^=icon-]{
-                display: inline-block;
-                line-height: 14px;
-                -webkit-font-smoothing: antialiased;
+            .p-data .el-icon-date:before{
+                content: '';
             }
-            /*icon样式*/
-            .input-group-addon>i{
-                color: #c5cdda;
+            .p-data .el-date-editor,.p-data2 .el-date-editor{
+                width:220px;
             }
-            .input-icon{
-                position: relative;
-                left: 0;
+            .el-date-table td.today{
+                color:#f95759;
             }
-            .input-icon>i{
-                color: #ccc;
-                position: absolute;
-                margin: 11px 2px 4px 10px;
-                z-index: 3;
-                width: 16px;
-                font-size: 16px;
+            .el-date-table td.current, .el-date-table td.end-date, .el-date-table td.start-date{
+                background-color: #f95759 !important;
+                color:#fff;
+            }
+            .el-date-picker__header-label.active, .el-date-picker__header-label:hover{
+                color:#f95759;
+            }
+            .el-picker-panel__icon-btn:hover{
+                color:#f95759;
+            }
+            .el-date-table td.available:hover{
+                background-color: #FFC4C4;
+            }
+            /*data1结束*/
+            .p-data2 .demonstration{
+                padding-right:22px;
+            }
+            .p-data2 .el-date-editor.is-active>.el-date-editor__editor, .el-date-editor:hover>.el-date-editor__editor, .el-date-editor__editor:focus{
+                border-color:#f95759;
+                background:#fff8f8;
+            }
+            .el-time-spinner__item.active:not(.disabled){
+                background-color:#f95759;
+            }
+            .el-time-panel__btn.confirm{
+                background:#f95759;
+                color:#fff;
+                font-weight:200
+            }
+            .el-time-panel__btn{
+                padding:0 15px;
+                border:2px solid #f95759;
+                border-radius: 14px !important;
+                line-height: 22px;
+            }
+            .el-time-panel__btn.cancel{
+                color:#f95759;
+            }
+            .el-time-panel__content::after, .el-time-panel__content::before{
+                background-color:#f95759;
+            }
+            .el-time-spinner__item:hover:not(.disabled):not(.active){
+                background:#FFC4C4;
+            }
+            .el-time-panel__footer,.el-picker-panel__footer{
                 text-align: center;
-                left: 0;
             }
-
-            .input-icon>.form-control{
-                padding-left: 33px;
+            .el-time-panel{
+                width:160px;
+            /*    left:-34px;*/
             }
-            /*icon在右侧*/
-            .input-icon.right{
-                left: auto;
-                right: 0;
+            .el-date-picker.has-time{
+                min-width:250px;
             }
-            .input-icon.right>i{
-                left: auto;
-                right: 8px;
-                float: right;
+            .has-time .el-time-panel__btn{
+                padding:0 5px;
+                line-height: 16px;
             }
-            .input-icon.right>.form-control{
-                padding-right: 33px;
-                padding-left: 12px;
+            .el-date-picker__editor{
+                border:1px solid #dcdcdc;
             }
-                </textarea>
-                <textarea readonly slot="innerusage">
-            form-horizontal(类名)：form容器，定义lable和输入框水平显示；
-            form-body(类名)：form内部所有输入框的容器
-            form-group(类名)：每行显示容器，里面包含lable、input等元素；
-            fa fa-envelope(类名)：显示字体图标，依赖字体图标库
-                </textarea>
-            </input-model>
-            <input-model labhtml="HTML" labcss="CSS" colorstyle="red">
-                <div class="portlet-body form" slot="showstyle">
-                    <read-only class="readOnly"></read-only>     
-                </div>
-                <textarea class="activeText" readonly slot="innhtml">{{readOnly}}</textarea>
-                <textarea slot="innercss">
-            a, button, code, div, img, input, label, li, p, pre, select, span, svg, table, td, textarea, th, ul{
-                border-radius: 0!important;
+            .el-date-picker__editor:focus,.el-date-picker__editor:hover{
+                border:1px solid #f95759;
             }
-            .control-label{
-                margin-top: 1px;
-                font-weight: 400;
+            .el-picker-panel__btn,.el-picker-panel__link-btn{
+                border:2px solid #f95759;
+                border-radius: 14px !important;
+                background:#f95759;
+                color:#fff;
             }
-            .form-control{
-                outline:0!important;
+            .el-picker-panel__link-btn{
+                padding:4px 20px;
+                background:#fff;
+                color:#f95759;
+                margin-right:10px;
             }
-            .btn, .form-control{
-                box-shadow:none!important;
+            @media screen and (max-width:991px){
+                .data-default{
+                    margin-bottom:20px;
+                }
             }
                 </textarea>
-                <textarea slot="innerusage">
-                    显示使用方法
-                </textarea> 
-            </input-model>
-            <input-model labhtml="HTML" labcss="CSS" colorstyle="blue-hoki">
-                <div class="portlet-body form" slot="showstyle">
-                    <check-box class="checkBox"></check-box>     
-                </div>
-                <textarea class="activeText" readonly slot="innhtml">{{checkBox}}</textarea>
-                <textarea slot="innercss">
-            a, button, code, div, img, input, label, li, p, pre, select, span, svg, table, td, textarea, th, ul{
-                border-radius: 0!important;
-            }
-            .control-label{
-                margin-top: 1px;
-                font-weight: 400;
-            }
-            .form-control{
-                outline:0!important;
-            }
-            .btn, .form-control{
-                box-shadow:none!important;
-            }
-
-            .mt-checkbox>span:after, .mt-radio>span:after{
-                content: '';
-                position: absolute;
-                display: none;
-            }
-            .input-icon>i, .mt-checkbox-list .mt-checkbox, .mt-checkbox-list .mt-radio, .mt-checkbox>input:checked~span:after, .mt-radio-list .mt-checkbox, .mt-radio-list .mt-radio, .mt-radio>input:checked~span:after{
-                display: block;
-            }
-            label{
-                font-weight: 400;
-            }
-            .mt-checkbox, .mt-radio{
-                display: inline-block;
-                position: relative;
-                padding-left: 30px;
-                margin-bottom: 15px;
-                cursor: pointer;
-                font-size: 14px;
-                webkit-transition: all .3s;
-                -moz-transition: all .3s;
-                -ms-transition: all .3s;
-                -o-transition: all .3s;
-                transition: all .3s;
-            }
-            .form-horizontal .form-group .mt-checkbox-list, .form-horizontal .form-group .mt-radio-list{
-                padding-top: 0;
-            }
-            .mt-checkbox-list, .mt-radio-list{
-                padding: 10px 0;
-            }
-            .mt-checkbox>span, .mt-radio>span{
-                border: 1px solid transparent;
-                position: absolute;
-                top: 1px;
-                left: 0;
-                height: 18px;
-                width: 18px;
-                background: #E6E6E6;
-            }
-            .mt-checkbox>input, .mt-radio>input{
-                position: absolute;
-                z-index: -1;
-                opacity: 0;
-                filter: alpha(opacity=0);
-            }
-            .mt-checkbox>input:disabled~span, .mt-radio>input:disabled~span{
-                opacity: .6;
-                filter: alpha(opacity=60);
-                pointer-events: none;
-            }
-            .mt-checkbox>span, .mt-radio>span{
-                border: 1px solid transparent;
-                position: absolute;
-                top: 1px;
-                left: 0;
-                height: 18px;
-                width: 18px;
-                background: #E6E6E6;
-            }
-            .mt-checkbox.mt-checkbox-outline:hover>input:not([disabled]):checked~span, .mt-checkbox.mt-checkbox-outline:hover>input:not([disabled])~span, .mt-checkbox.mt-checkbox-outline>input:checked~span, .mt-checkbox.mt-checkbox-outline>input:focus~span, .mt-checkbox.mt-checkbox-outline>span, .mt-checkbox.mt-radio-outline:hover>input:not([disabled]):checked~span, .mt-checkbox.mt-radio-outline:hover>input:not([disabled])~span, .mt-checkbox.mt-radio-outline>input:checked~span, .mt-checkbox.mt-radio-outline>input:focus~span, .mt-checkbox.mt-radio-outline>span, .mt-radio.mt-checkbox-outline:hover>input:not([disabled]):checked~span, .mt-radio.mt-checkbox-outline:hover>input:not([disabled])~span, .mt-radio.mt-checkbox-outline>input:checked~span, .mt-radio.mt-checkbox-outline>input:focus~span, .mt-radio.mt-checkbox-outline>span, .mt-radio.mt-radio-outline:hover>input:not([disabled]):checked~span, .mt-radio.mt-radio-outline:hover>input:not([disabled])~span, .mt-radio.mt-radio-outline>input:checked~span, .mt-radio.mt-radio-outline>input:focus~span, .mt-radio.mt-radio-outline>span{
-                border: 1px solid #d9d9d9;
-                background: 0 0;
-            }
-            .mt-checkbox-inline .mt-checkbox, .mt-checkbox-inline .mt-radio, .mt-radio-inline .mt-checkbox, .mt-radio-inline .mt-radio{
-                display: inline-block;
-                margin-right: 15px;
-            }
-            .form-horizontal .form-group .mt-checkbox-inline, .form-horizontal .form-group .mt-radio-inline{
-                padding-top: 8px;
-            }
-            .mt-checkbox-inline, .mt-radio-inline{
-                padding-top: 8px;
-            }
-            .mt-checkbox>span:after{
-                left: 6px;
-                top: 2px;
-                width: 5px;
-                height: 10px;
-                border: solid #888;
-                border-width: 0 2px 2px 0;
-                transform: rotate(45deg);
-            }
-                </textarea>
-            </input-model>
-            <input-model labhtml="HTML" labcss="CSS" colorstyle="yellow">
-                <div class="portlet-body form" slot="showstyle">
-                    <ra-dios class="raDios"></ra-dios>     
-                </div>
-                <textarea class="activeText" readonly slot="innhtml">{{raDios}}</textarea>
-                <textarea slot="innercss">
-            .form .form-body, .portlet-form .form-body{
-                padding: 20px;
-            }
-            .control-label{
-                margin-top: 1px;
-                font-weight: 400;
-            }
-            a, button, code, div, img, input, label, li, p, pre, select, span, svg, table, td, textarea, th, ul{
-                    border-radius: 0!important;
-            }
-            .form-horizontal .form-group .mt-checkbox-list, .form-horizontal .form-group .mt-radio-list{
-                    padding-top: 0;
-            }
-            .form-horizontal .form-group .mt-checkbox-inline, .form-horizontal .form-group .mt-radio-inline{
-                    padding-top: 8px;
-            }
-            .mt-checkbox-inline, .mt-radio-inline{
-                padding: 10px 0;
-            }
-            .mt-checkbox-list, .mt-radio-list{
-                padding: 10px 0;
-            }
-            .input-icon>i, .mt-checkbox-list .mt-checkbox, .mt-checkbox-list .mt-radio, .mt-checkbox>input:checked~span:after, .mt-radio-list .mt-checkbox, .mt-radio-list .mt-radio, .mt-radio>input:checked~span:after{
-                display: block;
-            }
-            .mt-checkbox, .mt-radio{
-                display: inline-block;
-                position: relative;
-                padding-left: 30px;
-                margin-bottom: 15px;
-                cursor: pointer;
-                font-size: 14px;
-                webkit-transition: all .3s;
-                -moz-transition: all .3s;
-                -ms-transition: all .3s;
-                -o-transition: all .3s;
-                transition: all .3s;
-            }
-            label{
-                font-weight: 400;
-            }
-            .mt-checkbox>input, .mt-radio>input{
-                position: absolute;
-                z-index: -1;
-                opacity: 0;
-            }
-            .mt-checkbox>span, .mt-radio>span{
-                border: 1px solid transparent;
-                position: absolute;
-                top: 1px;
-                left: 0;
-                height: 18px;
-                width: 18px;
-                background: #E6E6E6;
-            }
-
-            .mt-radio>span, .timeline .timeline-badge-userpic img{
-                -webkit-border-radius: 50%!important;
-                -moz-border-radius: 50%!important;
-            }
-            .mt-radio>span{
-                -ms-border-radius: 50%!important;
-                -o-border-radius: 50%!important;
-                border-radius: 50%!important;
-            }
-            .input-icon>i, .mt-checkbox-list .mt-checkbox, .mt-checkbox-list .mt-radio, .mt-checkbox>input:checked~span:after, .mt-radio-list .mt-checkbox, .mt-radio-list .mt-radio, .mt-radio>input:checked~span:after{
-                    display: block;
-            }
-            .mt-radio>span:after{
-                left: 5px;
-                top: 5px;
-                height: 6px;
-                width: 6px;
-                border-radius: 100%!important;
-                background: #888;
-            }
-            .mt-checkbox>span:after, .mt-radio>span:after{
-                content: '';
-                position: absolute;
-                display: none;
-            }
-
-            .mt-checkbox>span, .mt-radio>span{
-                border: 1px solid transparent;
-                position: absolute;
-                top: 1px;
-                left: 0;
-                height: 18px;
-                width: 18px;
-                background: #E6E6E6;
-            }
-            .mt-checkbox.mt-checkbox-disabled, .mt-checkbox.mt-radio-disabled, .mt-radio.mt-checkbox-disabled, .mt-radio.mt-radio-disabled{
-                    opacity: .8;
-                    filter: alpha(opacity=80);
-                    cursor: not-allowed;
-            }
-            .mt-checkbox>input:disabled~span, .mt-radio>input:disabled~span{
-                opacity: .6;
-                filter: alpha(opacity=60);
-                pointer-events: none;
-            }
-                </textarea>
+                
             </input-model>
         </div>
     </div>

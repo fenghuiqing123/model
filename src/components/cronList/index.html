@@ -3,7 +3,66 @@
 	<div class="tab-content">
         <div class="tab-pane active" id="tab_0">
             <input-model labhtml="HTML" labcss="CSS" labusage="USAGE">
-               <div class="portlet-body form" slot="showstyle">
+               <div class="portlet-body form p-top" slot="showstyle">
+                    <default1 class="default1"></default1>
+                </div>
+                <textarea readonly class="activeText" slot="innhtml">{{default1}}</textarea>
+                <textarea readonly slot="innercss">
+            innercss :'a, button, code, div, img, input, label, li, p, pre, select, span, svg, table, td, textarea, th, ul{
+                border-radius: 0!important;
+            }
+            .control-label{
+                margin-top: 1px;
+                font-weight: 400;
+            }
+            .form-control{
+                outline:0!important;
+            }
+            .btn, .form-control{
+                box-shadow:none!important;
+            }
+            .help-block{
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+            [class*=" fa-"]:not(.fa-stack), [class*=" glyphicon-"], [class*=" icon-"], [class^=fa-]:not(.fa-stack), [class^=glyphicon-], [class^=icon-]{
+                display: inline-block;
+                line-height: 14px;
+                -webkit-font-smoothing: antialiased;
+            }
+            .p-input{
+                border-color:#dcdcdc;
+                height: 36px;
+            }
+            .p-background{
+               border-color:#f95759;
+                background:#fff8f8;
+                height: 36px;
+            }
+            .P-Readonly{
+                border-color: #dcdcdc;
+                background:#eee;
+                height: 36px;
+            }
+            .P-Error{
+                border-color:#dcdcdc;
+            }
+            .p-er{
+                color:#f95759;
+                background:url("../../lib/global/img/jingao_03.png") no-repeat left;
+                padding-left: 19px;
+            }
+                </textarea>
+                <textarea readonly slot="innerusage">
+            P-Disabled（类名）：以p开头的类，表示常用输入框；
+            form-horizontal(类名)：form容器，定义lable和输入框水平显示；
+            form-body(类名)：form内部所有输入框的容器
+            form-group(类名)：每行显示容器，里面包含lable、input等元素；
+            fa fa-envelope(类名)：显示字体图标，依赖字体图标库
+                </textarea>
+            </input-model>
+            <input-model labhtml="HTML" labcss="CSS" labusage="USAGE">
+               <div class="portlet-body form p-top" slot="showstyle">
                     <form1 class="form1"></form1>     
                 </div>
                 <textarea readonly class="activeText" slot="innhtml">{{html}}</textarea>

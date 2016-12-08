@@ -1,0 +1,25 @@
+input{
+    outline: none;
+}
+.p-input{
+    border-color:#dcdcdc;
+    height: 36px;
+}
+.p-background{
+   border-color:#f95759;
+    background:#fff8f8;
+    height: 36px;
+}
+.P-Readonly{
+    border-color: #dcdcdc;
+    background:#eee;
+    height: 36px;
+}
+.P-Error{
+    border-color:#dcdcdc;
+}
+.p-er{
+    color:#f95759;
+    background:url("../../lib/global/img/jingao_03.png") no-repeat left;
+    padding-left: 19px;
+}

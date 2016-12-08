@@ -54,6 +54,12 @@ export default {
         border-color: #FFC4C4;
         color:#F95759;
     }
+    .p-bottom{
+        margin-bottom: 20px;
+    }
+    .p-top{
+        margin-top:80px;
+    }
   @media screen and (max-width:991px){
     .view-wrap{
         margin-left:0px;
